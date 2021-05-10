@@ -1,0 +1,32 @@
+body
+{
+    background-color: #a7bbc7;
+
+    .main-container
+    {
+        #root
+        {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-gap: 80px;
+
+            .edisodeBlock {
+                border-radius: 3px;
+                padding: 20px;
+            }
+
+        }
+    }
+
+
+    @media only screen and (min-width: 768px) {
+        .main-container
+        {
+             margin: 0 auto;
+             max-width: 1200px;
+        }
+    }
+
+}
+
+
