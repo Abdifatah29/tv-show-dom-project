@@ -1,5 +1,5 @@
 body {
-  background-color: #a7bbc7;
+  background-color: #3c3c3b;
 }
 
 body .main-container #root {
@@ -11,8 +11,28 @@ body .main-container #root {
 }
 
 body .main-container #root .edisodeBlock {
-  border-radius: 3px;
   padding: 20px;
+  background-color: #fff;
+  border: 1px solid;
+  -webkit-box-shadow: 5px 6px #888;
+          box-shadow: 5px 6px #888;
+  border-radius: 30px;
+  position: relative;
+  min-width: 246px;
+}
+
+body .main-container #root .edisodeBlock .edisodeText {
+  position: relative;
+  max-width: 250px;
+}
+
+body .main-container #root .edisodeBlock .edisodeHeader {
+  border: 1px solid;
+  margin-bottom: 1rem;
+  border-radius: 9px;
+  text-align: center;
+  -webkit-box-shadow: -4px 3px 0 1px #888;
+          box-shadow: -4px 3px 0 1px #888;
 }
 
 @media only screen and (min-width: 768px) {

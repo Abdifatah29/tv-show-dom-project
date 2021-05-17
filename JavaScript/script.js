@@ -7,11 +7,11 @@ $.ajax({
 
 function render(episodes) {
     for(let episode in episodes){
-        console.log(episodes[episode]['summary']);
+        console.log(episodes[episode]['number']);
         $('#root').append("<div class='edisodeBlock'>"
-                + "<div><h3>" + episodes[episode]['name'] + "</h3></div>"
+                + "<div class='edisodeHeader'><h3>" + episodes[episode]['name'] + " - S0" + episodes[episode]['season'] + "E0" + episodes[episode]['number'] + "</h3></div>"
                 + "<div><img alt='asd' src='" + episodes[episode]['image']['medium'] + "'>"
-                +   "<p>" + episodes[episode]['summary'] + "</p>"
+                +   "<div class='edisodeText'><p>" + episodes[episode]['summary'] + "</p><div>"
                 + "</div>"
             + "</div>"
         );
